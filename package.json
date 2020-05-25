@@ -1,8 +1,8 @@
 {
-  "name": "pika-webworker",
+  "name": "pikaz-webworker",
   "version": "0.1.0",
   "description": "A WebWorker Component",
-  "main": "lib/pika-webworker.js",
+  "main": "lib/pikaz-webworker.js",
   "scripts": {
     "build": "webpack"
   },
