@@ -10,6 +10,13 @@
     "webworker",
     "component"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pikaz-18/pika-webworker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pikaz-18/pika-webworker/issues"
+  },
   "license": "MIT",
   "author": "pikaz",
   "dependencies": {
