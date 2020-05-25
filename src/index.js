@@ -2,7 +2,7 @@
  * @Author: zouzheng
  * @Date: 2020-05-25 10:54:46
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-05-25 11:03:49
+ * @LastEditTime: 2020-05-25 14:01:22
  * @Description: 这是XXX组件（页面）
  */
 import SWorker from 'simple-web-worker'
@@ -14,24 +14,29 @@ import SWorker from 'simple-web-worker'
  * @param {Array} params/数组对象函数参数
  * @return: 
  */
-const worker = arr => {
-  const actions = arr.map((item, index) => {
-    return { message: index.toString(), func: item.fuc }
+let w = null
+
+const run = arr => {
+  const actions = []
+  const func = []
+  arr.forEach((item, index) => {
+    actions.push({ message: index.toString(), func: item.fuc })
+    func.push({ message: index.toString(), args: item.params })
   })
-  const func = arr.map((item, index) => {
-    return { message: index.toString(), args: item.params }
-  })
-  let w = SWorker.create(actions)
+  w = SWorker.create(actions)
   return w.postAll(func)
     .then(res => {
       return res
     })
     .catch(err => {
-      console.log(err)
       return err
     }).finally(() => {
       w = null
-    }
-    )
+    })
 }
-export { worker }
+
+// 留作扩展
+const worker = {
+  run
+}
+export default worker
