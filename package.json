@@ -1,0 +1,15 @@
+{
+  "name": "pika-webworker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simple-web-worker": "^1.2.0"
+  }
+}
