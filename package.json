@@ -1,6 +1,6 @@
 {
   "name": "pikaz-webworker",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "A WebWorker Component",
   "main": "lib/pikaz-webworker.js",
   "scripts": {
