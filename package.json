@@ -7,8 +7,13 @@
     "build": "webpack"
   },
   "keywords": [
+    "vue",
     "webworker",
     "component"
+  ],
+  "files": [
+    "lib",
+    "example"
   ],
   "repository": {
     "type": "git",
