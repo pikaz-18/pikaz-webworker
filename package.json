@@ -7,7 +7,6 @@
     "build": "webpack"
   },
   "keywords": [
-    "vue",
     "webworker",
     "component"
   ],

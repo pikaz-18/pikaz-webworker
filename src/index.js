@@ -2,8 +2,8 @@
  * @Author: zouzheng
  * @Date: 2020-05-25 10:54:46
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-18 15:29:19
- * @Description: 这是XXX组件（页面）
+ * @LastEditTime: 2020-06-18 15:30:34
+ * @Description: 这是webworker组件（页面）
  */
 import SWorker from 'simple-web-worker'
 
