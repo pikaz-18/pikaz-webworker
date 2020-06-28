@@ -36,3 +36,8 @@ worker.run(arr).then(res => {
 })
 ```
 
+### arr参数Object[]
+参数|说明|类型|可选值|默认值
+-|-|-|-|-
+fuc|执行函数|fuction|--|--
+params|传入函数的参数，参数有多少个，传入函数形参就有多少个|array|--|--
