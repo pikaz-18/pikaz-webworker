@@ -29,7 +29,7 @@ npm i -S pikaz-webworker
   import worker from 'pikaz-webworker'
   const arr = [
   { fuc: () => `函数一运行`, params: [] },
-  { fuc: p => p+4, params: [2] },
+  { fuc: (a,b,c) => a+b+c, params: [2,3,4] },
 ]
 worker.run(arr).then(res => {
   console.log(res)
